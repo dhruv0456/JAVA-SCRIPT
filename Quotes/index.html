@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1ec0a4;
+        height: 100vh;
+    }
+
+    .container {
+        width: 500px;
+        height: 400px;
+    }
+
+    .main-content {
+        width: 100%;
+        height: 150px;
+        padding: 50px 40px;
+        background-color: #fff;
+        border-radius: 15px;
+        font-size: large;
+        box-shadow: 10px 10px 15px #FFF888;
+        text-align: center;
+    }
+
+    .button-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #Qbtn {
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: none;
+        font-size: medium;
+        outline: none;
+        background-color:aquamarine;
+        box-shadow: 0px 5px 5px;
+    }
+
+    #Qbtn:active {
+        background-color:#FFF888;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="main-content">
+            <span class="quote">
+                Life is like riding a bicycle. To keep your balance, you must keep moving.	
+            </span>
+        </div>
+
+        <div class="button-area">
+            <div class="btn">
+                <button id="Qbtn">New Quotes</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
