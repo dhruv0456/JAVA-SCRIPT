@@ -1,0 +1,381 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; /* Ensure padding and border are included in element size */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 80px;
+    box-shadow: 1px 3px 3px 3px rgb(228, 227, 227);
+    background-color: white;
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+
+
+.menu {
+    display: flex;
+}
+
+.menu-icon {
+    display: none; /* Hide menu icon by default */
+    cursor: pointer;
+    font-size: 24px;
+}
+.searchBar {
+    display: none; /* Hide search bar by default */
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Add some padding */
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+    height: 35px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+}
+.searchBar input{
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    width: 350px;
+}
+.searchBar i{
+    margin-left: 300px;
+    font-size: 18px;
+    color: #333;
+    margin-top: -25px;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px; /* Adjust for fixed navigation */
+    background-color: rgb(248, 166, 128);
+    padding: 20px;
+}
+.main img{
+    width: 330px;
+    max-width: 100%; /* Make image responsive within its container */
+}
+.mainText{
+    margin-top: 0; /* Reset default margin */
+}
+.mainText h1{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.mainText p{
+    margin-top: 15px;
+    line-height: 1.6;
+}
+.mainText button{
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.mainText button:hover{
+    border: 3px solid black;
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+}
+.head{
+    text-align: center;
+    padding: 60px 20px; 
+}
+.head h1{
+    font-size: 2.5em;
+}
+.menCard,
+.WomenCard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    padding: 0 20px;
+}
+.card{
+    width: 300px;
+    background-color: #fff;
+    margin: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    height: auto; 
+    display: block; 
+    max-height: 250px; 
+    object-fit: cover; 
+}
+.card p{
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    margin-top: 40px;
+    background-color: rgb(250, 140, 89);
+    flex-wrap: wrap; 
+    text-align: center; 
+}
+.footer .text{
+    margin: 15px;
+}
+.footer h3{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.footer p{
+    margin-top: 8px;
+    font-size: 0.9em;
+}
+.cardDetail{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column; 
+    align-items: center; 
+}
+.cardDetail img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+.cardDetail p{
+    margin-top: 15px;
+    font-size: 1em;
+    text-align: center;
+}
+.cardDetail h3{
+    margin-top: 25px;
+    font-size: 1.5em;
+    text-align: center;
+}
+.cardDetail button{
+    width: 120px;
+    height: 35px;
+    background-color: rgb(255, 145, 0);
+    color: white;
+    font-size: 1em;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.detailText{
+    font-size: 1.1em;
+    margin-top: 25px;
+    text-align: center;
+}
+.detailText i{
+    color: orange;
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+.detailText a{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: rgb(250, 29, 66);
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+    nav{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li a{
+        margin: 10px 0;
+    }
+    .searchBar{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .searchBar input{
+        width: calc(100% - 30px);
+        font-size: 16px;
+    }
+    .icons{
+        gap: 15px;
+        font-size: 20px;
+    }
+    .main{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+    .main img{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .mainText h1{
+        font-size: 3em;
+    }
+    .card{
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer .text{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+
+    .menu {
+        display: none; 
+        flex-direction: row; 
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        top: 80px; 
+        left: 0;
+        z-index: 1000;
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+    .searchBar {
+        display: flex;
+    }
+
+
+
+
+
+    nav ul{
+        
+    }
+    nav ul li a{
+        margin-left: 15px;
+    }
+    .searchBar input{
+        width: 250px;
+    }
+    .main{
+        
+        padding: 30px;
+    }
+    .main img{
+        width: 45%;
+    }
+    .mainText h1{
+        font-size: 4em;
+    }
+    .card{
+        width: calc(50% - 30px); 
+    }
+    
+    .footer{
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .footer .text{
+        width: auto;
+        margin: 15px;
+        text-align: left;
+    }
+    .cardDetail{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .cardDetail img{
+        width: 50%;
+    }
+    .cardDetail .detailText,
+    .cardDetail h3,
+    .cardDetail button{
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 993px) {
+    nav ul li a{
+        margin-left: 20px;
+    }
+    .searchBar input{
+        width: 350px;
+    }
+    .main{
+        
+        padding: 40px;
+    }
+    .main img{
+        width: 330px;
+    }
+    .mainText h1{
+        font-size: 70px;
+    }
+    .card{
+        width: 300px;
+    }
+    
+} 
