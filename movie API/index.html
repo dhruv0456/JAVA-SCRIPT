@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie App</title>
+  <style>
+    body { font-family: Arial; background: #111; color: #fff; padding: 20px; }
+    .search-container { margin-bottom: 20px; }
+    input { padding: 10px; width: 300px; border-radius: 5px; border: none; }
+    .movies { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+    .movie { background: #222; padding: 10px; border-radius: 10px; text-align: center; }
+    .movie img { width: 100%; border-radius: 10px; }
+    .title { font-size: 18px; margin: 10px 0 5px; }
+    .rating { color: gold; }
+  </style>
+</head>
+<body>
+
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search movies...">
+  </div>
+
+  <div class="movies" id="movie-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
